@@ -1,0 +1,1268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>E-commerce Website</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    padding-top:90px;
+}
+
+/* Header */
+header{
+    width:100%;
+    height:90px;
+    background-color:#FFE6E2;
+    color:black;
+    display:flex;
+    align-items:center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2000;
+}
+
+#aa{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+#aa h1{
+    font-size:35px;
+    font-weight:bold;
+    padding-left:30px;
+}
+
+/* Navigation */
+.aa{
+    display:flex;
+    gap:30px;
+    margin-left:auto;
+    padding-right:30px;
+    align-items:center;
+}
+
+.aa a{
+    text-decoration:none;
+    color:black;
+    font-size:20px;
+}
+
+.aa a:hover{
+    color:red;
+}
+
+/* Hero */
+hero{
+    display:block;
+    width:100%;
+}
+
+#bb{
+    width:100%;
+    min-height:650px;
+    background-color:#FFE6E2;
+    color:black;
+    display:flex;
+    flex-wrap:nowrap;
+
+    /* Home/Hero Section */
+    position:relative;
+}
+
+.cc{
+    width:50%;
+    padding-left:100px;
+    padding-top:180px;
+}
+
+.cc h1{
+    font-size:45px;
+    font-weight:900;
+    color:black;
+    font-family:Arial,sans-serif;
+}
+
+.cc p{
+    font-size:20px;
+    padding-top:30px;
+    line-height:1.6;
+}
+
+.dd{
+    width:160px;
+    padding:12px;
+    background-color:#FFA500;
+    color:white;
+    font-size:16px;
+    border:none;
+    border-radius:20px;
+    margin-top:25px;
+    cursor:pointer;
+}
+
+.dd:hover{
+    background-color:#FFB347;
+}
+
+/* Hero Image */
+.ee{
+    width:50%;
+    min-height:500px;
+    margin-top:70px;
+    margin-right:80px;
+
+    background-image:url("https://thumbs.wbm.im/pw/medium/dfb57f76dfa5fee0df5b1a79068814a4.png");
+
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+/* Products */
+#products{
+    margin-top:650px;
+    background-color:white;
+    width:100%;
+    padding:80px 50px;
+    text-align:center;
+}
+
+#products h1{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+/* Product Images */
+#products img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+/* Featured */
+.featured{
+    width:100%;
+    background-color:white;
+    color:black;
+    padding-top:40px;
+}
+
+.featured h1,
+#latest h1{
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.featured h1:after,
+#latest h1:after{
+    content:"";
+    display:block;
+    width:60px;
+    height:4px;
+    background-color:#ff523b;
+    margin:10px auto 0;
+}
+
+/* Product Row */
+.feat{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    margin-bottom:70px;
+}
+
+/* Product Card */
+.fea{
+    width:23%;
+    padding:10px;
+    text-align:left;
+}
+
+.fea img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+    border-radius:5px;
+}
+
+.fea p{
+    font-size:16px;
+    margin-top:10px;
+}
+
+/* Rating */
+.rating{
+    color:#ff9800;
+    font-size:18px;
+    margin-top:6px;
+}
+
+.rating i{
+    margin-right:2px;
+}
+
+/* Price */
+.fea .rating + p{
+    margin-top:7px;
+    font-weight:bold;
+}
+
+/* Latest Products */
+#latest{
+    width:100%;
+    background-color:white;
+    padding:60px 50px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    header{
+        height:auto;
+        padding:20px 0;
+    }
+
+    #aa{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    #aa h1{
+        padding-left:0;
+    }
+
+    .aa{
+        margin-left:0;
+        padding-right:0;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    #bb{
+        flex-direction:column;
+    }
+
+    .cc{
+        width:100%;
+        padding:80px 30px 40px;
+    }
+
+    .cc h1{
+        font-size:35px;
+    }
+
+    .ee{
+        width:90%;
+        margin:20px auto 50px;
+        min-height:400px;
+    }
+
+    .feat{
+        width:95%;
+        flex-wrap:wrap;
+    }
+
+    .fea{
+        width:48%;
+    }
+}
+
+@media(max-width:500px){
+
+    .fea{
+        width:100%;
+    }
+
+    .cc h1{
+        font-size:30px;
+    }
+
+}
+
+.qqq{
+    width:50%;
+    padding-left:100px;
+    padding-top:180px;
+}
+
+.qqq h1{
+    font-size:20px;
+        color:black;
+    font-family:Arial,sans-serif;
+}
+.qqq h2{
+font-size:45px;
+    font-weight:900;
+    color:black;
+    font-family:Arial,sans-serif;
+margin-top:30px;
+}
+.qqq p{
+    font-size:20px;
+    padding-top:30px;
+    line-height:1.6;
+margin-bottom:20px;
+}
+#smart{
+    display:block;
+    width:100%;
+background-color:#FFE6E2;
+padding-bottom:170px;
+}
+.qq{
+    width:50%;
+    min-height:500px;
+    margin-top:70px;
+    margin-right:80px;
+
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN_n20hcwUTNTNpRPCmqV-ynaLZ0XuvnmOclTx-KHkkS2M90yjLazUMVk&s=10");
+background-color:#FFE6E2;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+#bb{
+    width:100%;
+    min-height:650px;
+    background-color:#FFE6E2;
+    color:black;
+    display:flex;
+    flex-wrap:nowrap;
+}
+
+#lorem{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:80px 50px;
+    background-color:#fff;
+}
+
+.lo{
+    width:25%;
+    height:415px;
+    background-color:white;
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
+    text-align:center;
+    padding:50px 20px 15px;
+    margin-left:20px;
+transition:0.3s;
+}
+.lo:hover{
+ transform: translateY(-10px);
+
+}
+.lo p{
+    font-size:14px;
+    line-height:1.5;
+    margin-top:20px;
+}
+
+.lo .rating{
+    color:#ff523b;
+    font-size:18px;
+    margin-top:15px;
+}
+
+.lo h1{
+    font-size:16px;
+    margin-top:25px;
+}
+.logo{
+    color:#e76f51;
+    font-size:55px;
+    font-weight:bold;
+    line-height:0.5;
+    margin:0;
+    padding:0;
+}
+.gore{
+font-style:italic;
+font-size:28px;
+}
+.subscribe{
+    background-color:#ff0000;
+    color:white;
+    border:none;
+    padding:3px 7px;
+    font-size:9px;
+}
+footer{
+    background-color:black;
+    color:white;
+    width:100%;
+    min-height:300px;
+    display:flex;
+    flex-wrap:nowrap;
+    margin-top:180px;
+    padding:70px 30px;
+}
+
+.red{
+    width:25%;
+    margin:0;
+    padding:0;
+}
+
+.red h1{
+    font-size:32px;
+    margin-bottom:5px;
+color:red;
+}
+
+.red p{
+    margin:3px 0;
+margin-top:10px;
+}
+.red:last-child{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/* ===== Fixed Navbar Enhancements ===== */
+header{
+    transition:0.3s ease;
+}
+
+header.scrolled{
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.aa a{
+    transition:0.3s ease;
+}
+
+.aa a.active{
+    color:red;
+    font-weight:bold;
+}
+
+/* ===== Viva-ready Responsive Enhancements ===== */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.dd{
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(255,165,0,0.20);
+}
+
+.dd:hover{
+    transform:translateY(-3px) scale(1.03);
+    box-shadow:0 8px 20px rgba(255,165,0,0.30);
+}
+
+.fea{
+    transition:0.3s ease;
+    border-radius:12px;
+}
+
+.fea:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+}
+
+.fea img{
+    transition:0.4s ease;
+}
+
+.fea:hover img{
+    transform:scale(1.03);
+}
+
+.aa a{
+    transition:0.3s ease;
+}
+
+.aa a:hover{
+    transform:translateY(-2px);
+}
+
+#lorem{
+    flex-wrap:wrap;
+}
+
+.red a{
+    color:white;
+    text-decoration:none;
+}
+
+.red p{
+    line-height:1.5;
+}
+
+#smart #bb{
+    align-items:center;
+}
+
+#smart .qq{
+    margin-left:40px;
+}
+
+@media(max-width:992px){
+    #aa h1{
+        font-size:30px;
+        padding-left:20px;
+    }
+
+    .aa{
+        gap:18px;
+        padding-right:20px;
+    }
+
+    .aa a{
+        font-size:17px;
+    }
+
+    #bb{
+        min-height:580px;
+    }
+
+    .cc{
+        padding-left:50px;
+        padding-top:130px;
+    }
+
+    .cc h1{
+        font-size:38px;
+    }
+
+    .cc p{
+        font-size:17px;
+    }
+
+    .ee{
+        margin-right:30px;
+        min-height:450px;
+    }
+
+    .feat{
+        width:92%;
+        gap:18px;
+    }
+
+    .fea{
+        width:24%;
+    }
+
+    .fea img{
+        height:250px;
+    }
+
+    #latest{
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    #smart #bb{
+        min-height:550px;
+    }
+
+    .qq{
+        margin-left:20px;
+        margin-right:20px;
+    }
+
+    .qqq{
+        padding-left:40px;
+        padding-top:100px;
+    }
+
+    .qqq h2{
+        font-size:38px;
+    }
+
+    .qqq p{
+        font-size:17px;
+    }
+
+    #lorem{
+        padding:60px 30px;
+        gap:20px;
+    }
+
+    .lo{
+        width:30%;
+        margin-left:0;
+    }
+
+    footer{
+        flex-wrap:wrap;
+        gap:30px;
+        margin-top:100px;
+    }
+
+    .red{
+        width:45%;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        padding-top:105px;
+    }
+
+    #bb{
+        position:relative;
+        top:0;
+    }
+
+    #products{
+        margin-top:0;
+    }
+
+    header{
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:2000;
+    }
+
+    #aa h1{
+        font-size:30px;
+    }
+
+    .aa a{
+        font-size:16px;
+    }
+
+    #bb{
+        flex-direction:column;
+        min-height:auto;
+        text-align:center;
+    }
+
+    .cc{
+        width:100%;
+        padding:70px 25px 30px;
+    }
+
+    .cc h1{
+        font-size:34px;
+    }
+
+    .cc p{
+        font-size:17px;
+    }
+
+    .ee{
+        width:90%;
+        min-height:360px;
+        margin:10px auto 50px;
+    }
+
+    .feat{
+        width:90%;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .fea{
+        width:46%;
+    }
+
+    .fea img{
+        height:260px;
+    }
+
+    #smart #bb{
+        flex-direction:column-reverse;
+        padding-bottom:50px;
+    }
+
+    .qqq{
+        width:100%;
+        padding:70px 25px 20px;
+        text-align:center;
+    }
+
+    .qqq h2{
+        font-size:36px;
+    }
+
+    .qqq p{
+        font-size:16px;
+    }
+
+    .qq{
+        width:90%;
+        min-height:330px;
+        margin:20px auto;
+    }
+
+    #lorem{
+        padding:50px 25px;
+    }
+
+    .lo{
+        width:45%;
+        height:auto;
+        min-height:320px;
+    }
+
+    footer{
+        padding:50px 25px;
+    }
+}
+
+@media(max-width:500px){
+    body{
+        padding-top:105px;
+    }
+
+    header{
+        height:105px;
+    }
+
+    #bb{
+        position:relative;
+    }
+
+    #products{
+        margin-top:0;
+    }
+
+    header{
+        padding:15px 0;
+    }
+
+    #aa h1{
+        font-size:27px;
+    }
+
+    .aa{
+        gap:12px;
+    }
+
+    .aa a{
+        font-size:14px;
+    }
+
+    .aa i{
+        display:none;
+    }
+
+    .cc{
+        padding:55px 18px 20px;
+    }
+
+    .cc h1{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .cc p{
+        font-size:15px;
+        padding-top:20px;
+    }
+
+    .dd{
+        width:150px;
+    }
+
+    .ee{
+        min-height:280px;
+    }
+
+    .featured h1,
+    #latest h1{
+        font-size:26px;
+        margin-bottom:35px;
+    }
+
+    .feat{
+        width:92%;
+    }
+
+    .fea{
+        width:100%;
+        text-align:center;
+    }
+
+    .fea img{
+        height:300px;
+    }
+
+    #latest{
+        padding:50px 15px;
+    }
+
+    #smart #bb{
+        padding-bottom:30px;
+    }
+
+    .qqq{
+        padding:50px 18px 10px;
+    }
+
+    .qqq h1{
+        font-size:18px;
+    }
+
+    .qqq h2{
+        font-size:31px;
+    }
+
+    .qqq p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    .qqq p br{
+        display:none;
+    }
+
+    .qq{
+        min-height:250px;
+        width:95%;
+    }
+
+    #lorem{
+        padding:40px 18px;
+    }
+
+    .lo{
+        width:100%;
+        min-height:280px;
+    }
+
+    footer{
+        margin-top:60px;
+        padding:45px 20px;
+        flex-direction:column;
+    }
+
+    .red{
+        width:100%;
+        text-align:center;
+    }
+
+    .red:last-child{
+        justify-content:center;
+    }
+}
+
+@media(max-width:360px){
+    .aa{
+        gap:8px;
+    }
+
+    .aa a{
+        font-size:12px;
+    }
+
+    .cc h1{
+        font-size:25px;
+    }
+
+    .fea img{
+        height:260px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+
+<div id="aa">
+
+<h1>STORE</h1>
+
+<div class="aa">
+
+<a href="#bb">
+<i class="fa-solid fa-house"></i> Home
+</a>
+
+<a href="#latest">
+<i class="fa-solid fa-bag-shopping"></i>Latest Products
+</a>
+
+<a href="#smart">
+<i class="fa-solid fa-circle-info"></i> About
+</a>
+
+
+<a href="#red1">
+<i class="fa-solid fa-user"></i> Account
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- Hero Section -->
+<hero>
+
+<div id="bb">
+
+<div class="cc">
+
+<h1>GIVE YOUR WORKOUT<br>A NEW STYLE!</h1>
+
+<p>Success isn't always about greatness.It's about consistency.<br>
+Consistent hard work gains success.Greatness will come.</p>
+<button class="dd explore-btn">Explore Now → </button>
+</div>
+<div class="ee"></div>
+</div>
+</hero>
+
+
+<!-- Featured Products -->
+<div class="featured">
+
+<h1>Featured Products</h1>
+
+<div class="feat">
+
+<!-- Product 1 -->
+<div class="fea product-card">
+
+<img src="https://tiimg.tistatic.com/fp/1/007/621/red-and-half-sleeve-printed-t-shirt-for-mens-for-casual-and-formal-events-685.jpg" jsaction="" class="sFlh5c FyHeAf iPVvYb" alt="Red Cotton Half Sleeve Printed T-shirt - Comfortable O-neck Design |  Stylish For Casual And Formal Events at 320.00 INR at Best Price in Chennai  | Mathew Garments" jsname="kn3ccd">
+<p>Red Printed T-Shirt</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$50.00</p>
+
+</div>
+
+
+<!-- Product 2 -->
+<div class="fea product-card">
+
+<img src="https://assets.ajio.com/medias/sys_master/root/20240419/BJ1t/6621fa8f16fd2c6e6ac06baa/-473Wx593H-466923165-white-MODEL.jpg">
+<p>Sports Shoes</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$75.00</p>
+
+</div>
+
+
+<!-- Product 3 -->
+<div class="fea product-card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT_cTs_f17yAB7noSd-ZWzFog04hjaj8aFljNfx49uUDKNz7ZjSiGQeMvz&s=10">
+<p>Grey Track Pants</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<p>$45.00</p>
+
+</div>
+
+
+<!-- Product 4 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiLvMwb3a4Q9XpqF97vL5qDP8ls9pmk-hj4wLRTlm_TA&s">
+<p>Blue Printed T-Shirt</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$55.00</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Latest Products -->
+<div id="latest">
+
+<h1>Latest Products</h1>
+
+<div class="feat">
+
+<!-- Product 1 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzi6r1RvYMQie_jVMS4DBSADxoXfhUNJJJ-WLIfQJvw&s">
+<p>Puma Grey Sports Shoes</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<p>$95.00</p>
+
+</div>
+
+
+<!-- Product 2 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP4BF1J3RNlkgpQLph9tjlj5Rn2fOpZ98FWx2Quxo6d5h3h0xzRn0e-Rz4&s=10">
+<p>Black Printed T-Shirt</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$55.00</p>
+
+</div>
+
+
+<!-- Product 3 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7gCslVWHqPZt7o4jUsmSFpYTsbIRztkoX0fcckJCLT2xNUur2ijHLlbY&s=10">
+
+<p>HRX Set of 3 Socks</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<p>$30.00</p>
+
+</div>
+
+
+<!-- Product 4 -->
+<div class="fea product-card">
+
+<img src="https://hotgadget.in/cdn/shop/files/461_622e8f27-334e-462f-9819-050918dcf881.jpg?v=1780873195">
+
+<p>Black Fossil Watch</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$120.00</p>
+
+</div>
+
+</div>
+
+
+<div class="feat">
+
+<!-- Product 5 -->
+<div class="fea product-card">
+
+<img src="https://tiimg.tistatic.com/fp/1/008/317/water-resistant-plastic-body-rubber-band-sport-wrist-watch--493.jpg">
+<p>Black Sports Watch</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<p>$135.00</p>
+
+</div>
+
+
+<!-- Product 6 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs1WGv9zEXWbfkPvlIPTuk_yyCk4HZoGubcum38vBq0KlkN6ow7JOrx6OF&s=10">
+<p>Black HRX Shoes</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<p>$50.00</p>
+
+</div>
+
+
+<!-- Product 7 -->
+<div class="fea product-card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELMxiUl1RxWulb6KFxVvJmsGTNXmdvBu8wVbIDPINMwk1DoLv9gevzWM&s=10">
+
+<p>Gray Nike Shoes</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$55.00</p>
+
+</div>
+
+
+<!-- Product 8 -->
+<div class="fea product-card">
+
+<img src="https://rukminim3.flixcart.com/image/160/210/xif0q/track-pant/m/c/m/m-39992067-hrx-by-hrithik-roshan-original-imahkuhrxdganvrq.jpeg?q=90">
+
+<p>HRX Black Trackpoints</p>
+
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+
+<p>$75.00</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="smart">
+<div id="bb">
+<div class="qq">
+</div>
+<div class="qqq">
+<h1>Exclusively Available On Store</h1>
+<h2>Smart Band 4</h2>
+<p>The Mi Smart Band 4 features a 39.9% larger (than Mi Band Band 3)AMOLED Color <br> Fuli-touch display with adjustable brightness so everything clear as can be.</p>
+<button class="dd buy-btn">Buy Now →</button>
+</div>
+</div>
+</div>
+
+
+<div id="lorem">
+<div class="lo">
+<div class="logo">
+    <span>“</span>
+</div>
+<p>Lorem Ipsum is simply dummy text of the <br>  printing and typosotting industry. Lorem <br> Ipsum has been the industry's standard <br> dummy text over. </p>
+<div class="rating">
+   ★ ★ ★ ★ ☆
+</div>
+<h1>Soan Parker</h1>
+</div>
+<div class="lo">
+<div class="logo">
+    <span>“</span>
+</div>
+<p>Lorem Ipsum is simply dummy text of the <br>  printing and typosotting industry. Lorem <br> Ipsum has been the industry's standard <br> dummy text over.</p>
+<div class="rating">
+   ★ ★ ★ ★ ☆
+</div> 
+<h1>Mike Smith</h1>
+</div>
+<div class="lo">
+<div class="logo">
+    <span>“</span>
+</div>
+<p>Lorem Ipsum is simply dummy text of the <br>  printing and typosotting industry. Lorem <br> Ipsum has been the industry's standard <br> dummy text over. </p>
+<div class="rating">
+    ★ ★ ★ ★ ☆
+</div>
+<h1>Mabel Joe</h1>
+</div>
+</div>
+
+
+<footer>
+<div id="red1"
+<div class="red">
+<h1>STORE</h1>
+<p>Our purpose is To Sunstainability Make the Pleasure and <br>Benefits of Sports Accessible to the Many</p>
+</div>
+ <div class="red">
+<h1>Useful Links</h1>
+<p>Coupons</p>
+<p>Blog Post</p>
+<p>Return Policy</p>
+</div>
+ <div class="red">
+<h1>Follow Us</h1>
+<p>Facebook</p>
+<p>Twitter</p>
+<p>Instagram</p>
+<p>YouTube</p>
+</div>
+<div class="red">
+<button class="subscribe">
+    <i class="fa-brands fa-youtube"></i> Subscribe
+</button>
+</div>
+</div>
+</footer>
+
+<script>
+/* ===== E-commerce Website JavaScript ===== */
+
+// 1. Explore Now button: scroll to products
+document.querySelector(".explore-btn").addEventListener("click", function(){
+    document.querySelector(".featured").scrollIntoView({
+        behavior: "smooth"
+    });
+});
+
+// 2. Buy Now button
+document.querySelector(".buy-btn").addEventListener("click", function(){
+    alert("Smart Band 4 added to your shopping list!");
+});
+
+// 3. Product card click
+document.querySelectorAll(".product-card").forEach(function(card){
+    card.addEventListener("click", function(){
+        let productName = card.querySelector("p").innerText;
+        let price = card.querySelector(".rating + p").innerText;
+
+        alert("Product: " + productName + "\nPrice: " + price);
+    });
+});
+
+// 4. Navigation click feedback
+document.querySelectorAll(".aa a").forEach(function(link){
+    link.addEventListener("click", function(){
+        document.querySelectorAll(".aa a").forEach(function(item){
+            item.classList.remove("active");
+        });
+        this.classList.add("active");
+    });
+});
+
+// 5. Subscribe button
+document.querySelector(".subscribe").addEventListener("click", function(){
+    alert("Thank you for subscribing to STORE!");
+});
+
+// 6. Simple page-load message in console
+console.log("STORE website loaded successfully!");
+</script>
+
+</body>
+</html>
